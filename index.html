@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver Blog Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Topic Input -->
+        <label for="topic">주제 (Topic):</label>
+        <input type="text" id="topic" name="topic" placeholder="보디빌딩">
+
+        <!-- Length Input -->
+        <label for="length">글 길이 (Length):</label>
+        <input type="number" id="length" name="length" placeholder="1000자 이내">
+
+        <!-- Keyword Input -->
+        <label for="keyword">키워드 (Keyword):</label>
+        <input type="text" id="keyword" name="keyword" placeholder="효과">
+
+        <!-- Target Audience Input -->
+        <label for="audience">주요 관객 (Target Audience):</label>
+        <input type="text" id="audience" name="audience" placeholder="운동 좋아하는 사람">
+
+        <!-- Photo Idea Addition Checkbox -->
+        <label for="photo-idea">사진 아이디어 추가 (Add Photo Ideas):</label>
+        <input type="checkbox" id="photo-idea" name="photo-idea">
+
+        <!-- Number of Photos Input -->
+        <label for="photo-count">사진 갯수 (Number of Photos):</label>
+        <input type="number" id="photo-count" name="photo-count" placeholder="3" disabled>
+
+        <!-- Submit Button -->
+        <button id="submit">블로그 글 생성 (Generate Blog Post)</button>
+    
+    </div>
+    <!-- Progress Bar -->
+    <div id="progress-bar" style="display:none; width: 100%; background-color: #ddd;">
+        <div id="progress-bar-status" style="height: 20px; width: 0%; background-color: #4CAF50;"></div>
+    </div>
+
+    <!-- Add this below your Submit Button in index.html -->
+    <div id="output" style="margin-top: 20px;"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
